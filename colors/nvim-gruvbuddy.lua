@@ -1,3 +1,6 @@
+vim.api.nvim_set_hl(0, 'SnacksPickerMatch', { fg = '#e89155' })
+vim.api.nvim_set_hl(0, 'SnacksPickerPathHidden', { fg = '#e0e0e0' })
+vim.api.nvim_set_hl(0, 'SnacksPickerPathIgnored', { fg = '#e0e0e0' })
 vim.api.nvim_set_hl(0, 'DiagnosticVirtualTextError', { bg = 'none', fg = 'none', link = "DiagnosticError" })
 vim.api.nvim_set_hl(0, 'telescopematching', { bg = 'none', fg = '#E89155' })
 vim.api.nvim_set_hl(0, 'Debug', { bg = 'none', fg = 'none', link = "Special" })
