@@ -146,7 +146,7 @@ function theme.new_base16(name, colors)
 end
 
 ------ Here goes the theme.
-local gruvbuddy = theme.new_base16(
+theme.new_base16(
     "gruvbuddy",
     {
         -- UI
@@ -168,6 +168,4 @@ local gruvbuddy = theme.new_base16(
         RGB.from_hex('#F8FE7A'), -- base0D
         RGB.from_hex('#B294BB'), -- base0E
         RGB.from_hex('#E6B3B3'), -- base0F
-    })
-
-gruvbuddy:apply()
+    }):apply()
