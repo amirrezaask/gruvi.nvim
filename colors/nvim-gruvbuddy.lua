@@ -93,51 +93,55 @@ function theme.new_base16(name, colors)
         vim.cmd("highlight clear")
         vim.g.colors_name = name
 
-        local set_hl = vim.api.nvim_set_hl
+        local hl = vim.api.nvim_set_hl
 
-        set_hl(0, "Normal", { fg = base05:to_hex(), bg = base00:to_hex() })
-        set_hl(0, "NormalFloat", { fg = base05:to_hex(), bg = base01:to_hex() })
-        set_hl(0, "LineNr", { fg = base03:to_hex() })
-        set_hl(0, "CursorLineNr", { fg = base0D:to_hex(), bold = true })
-        set_hl(0, "CursorLine", { bg = base01:to_hex() })
-        set_hl(0, "Visual", { bg = base02:to_hex() })
-        set_hl(0, "Cursor", { fg = base00:to_hex(), bg = base07:to_hex() })
-        set_hl(0, "StatusLine", { fg = base04:to_hex(), bg = base02:to_hex() })
-        set_hl(0, "StatusLineNC", { fg = base04:to_hex(), bg = base01:to_hex() })
-        set_hl(0, "VertSplit", { fg = base03:to_hex() })
-        set_hl(0, "Pmenu", { bg = base01:to_hex(), fg = base08:to_hex() })
-        set_hl(0, "PmenuSel", { bg = base0D:to_hex(), fg = base01:to_hex() })
-        set_hl(0, "BlinkCmpMenu", { link = "Pmenu" })
-        set_hl(0, "BlinkCmpMenuSelection", { link = "PmenuSel" })
-        set_hl(0, "Search", { fg = base00:to_hex(), bg = base0A:to_hex() })
-        set_hl(0, "IncSearch", { fg = base00:to_hex(), bg = base09:to_hex() })
-        set_hl(0, "MatchParen", { fg = base0E:to_hex(), bold = true })
-        set_hl(0, "Folded", { fg = base03:to_hex(), bg = base01:to_hex() })
-        set_hl(0, "SignColumn", { bg = base00:to_hex() })
-        set_hl(0, "Comment", { fg = base03:to_hex(), italic = true })
-        set_hl(0, "Keyword", { fg = base0E:to_hex() })   -- e.g., if, for
-        set_hl(0, "Statement", { fg = base0E:to_hex() }) -- e.g., return, break
-        set_hl(0, "Function", { fg = base0D:to_hex() })
-        set_hl(0, "String", { fg = base0B:to_hex() })
-        set_hl(0, "Number", { fg = base09:to_hex() })
-        set_hl(0, "Float", { fg = base09:to_hex() })
-        set_hl(0, "Boolean", { fg = base09:to_hex() })
-        set_hl(0, "Constant", { fg = base0C:to_hex() })
-        set_hl(0, "Type", { fg = base0A:to_hex() })
-        set_hl(0, "Identifier", { fg = base08:to_hex() })
-        set_hl(0, "Operator", { fg = base05:to_hex() })
-        set_hl(0, "PreProc", { fg = base0E:to_hex() }) -- e.g., #include
-        set_hl(0, "Special", { fg = base0C:to_hex() }) -- e.g., escape sequences
-        set_hl(0, "SpecialComment", { fg = base04:to_hex(), italic = true })
-        set_hl(0, "Todo", { fg = base0A:to_hex(), bg = base01:to_hex(), bold = true })
+        hl(0, "Normal", { fg = base05:to_hex(), bg = base00:to_hex() })
+        hl(0, "NormalFloat", { fg = base05:to_hex(), bg = base01:to_hex() })
+        hl(0, "LineNr", { fg = base03:to_hex() })
+        hl(0, "CursorLineNr", { fg = base0D:to_hex(), bold = true })
+        hl(0, "CursorLine", { bg = base01:to_hex() })
+        hl(0, "Visual", { bg = base02:to_hex() })
+        hl(0, "Cursor", { fg = base00:to_hex(), bg = base07:to_hex() })
+        hl(0, "StatusLine", { fg = base04:to_hex(), bg = base02:to_hex() })
+        hl(0, "StatusLineNC", { fg = base04:to_hex(), bg = base01:to_hex() })
+        hl(0, "VertSplit", { fg = base03:to_hex() })
+        hl(0, "Pmenu", { bg = base01:to_hex(), fg = base08:to_hex() })
+        hl(0, "PmenuSel", { bg = base0D:to_hex(), fg = base01:to_hex() })
+        hl(0, "BlinkCmpMenu", { link = "Pmenu" })
+        hl(0, "BlinkCmpMenuSelection", { link = "PmenuSel" })
+        hl(0, "Search", { fg = base00:to_hex(), bg = base0A:to_hex() })
+        hl(0, "IncSearch", { fg = base00:to_hex(), bg = base09:to_hex() })
+        hl(0, "MatchParen", { fg = base0E:to_hex(), bold = true })
+        hl(0, "Folded", { fg = base03:to_hex(), bg = base01:to_hex() })
+        hl(0, "SignColumn", { bg = base00:to_hex() })
+        hl(0, "Comment", { fg = base03:to_hex(), italic = true })
+        hl(0, "Keyword", { fg = base0E:to_hex() })   -- e.g., if, for
+        hl(0, "Statement", { fg = base0E:to_hex() }) -- e.g., return, break
+        hl(0, "Function", { fg = base0D:to_hex() })
+        hl(0, "String", { fg = base0B:to_hex() })
+        hl(0, "Number", { fg = base09:to_hex() })
+        hl(0, "Float", { fg = base09:to_hex() })
+        hl(0, "Boolean", { fg = base09:to_hex() })
+        hl(0, "Constant", { fg = base0C:to_hex() })
+        hl(0, "Type", { fg = base0A:to_hex() })
+        hl(0, "Identifier", { fg = base08:to_hex() })
+        hl(0, "Operator", { fg = base05:to_hex() })
+        hl(0, "PreProc", { fg = base0E:to_hex() }) -- e.g., #include
+        hl(0, "Special", { fg = base0C:to_hex() }) -- e.g., escape sequences
+        hl(0, "SpecialComment", { fg = base04:to_hex(), italic = true })
+        hl(0, "Todo", { fg = base0A:to_hex(), bg = base01:to_hex(), bold = true })
 
-        set_hl(0, "Error", { fg = base08:to_hex() })
-        set_hl(0, "Warning", { fg = base09:to_hex() })
+        hl(0, "Error", { fg = base08:to_hex() })
+        hl(0, "Warning", { fg = base09:to_hex() })
 
-        set_hl(0, "DiffAdd", { fg = base0B:to_hex(), bg = base01:to_hex() })
-        set_hl(0, "DiffChange", { fg = base09:to_hex(), bg = base01:to_hex() })
-        set_hl(0, "DiffDelete", { fg = base08:to_hex(), bg = base01:to_hex() })
-        set_hl(0, "DiffText", { fg = base0D:to_hex(), bg = base01:to_hex() })
+        hl(0, "DiffAdd", { fg = base0B:to_hex(), bg = base01:to_hex() })
+        hl(0, "DiffChange", { fg = base09:to_hex(), bg = base01:to_hex() })
+        hl(0, "DiffDelete", { fg = base08:to_hex(), bg = base01:to_hex() })
+        hl(0, "DiffText", { fg = base0D:to_hex(), bg = base01:to_hex() })
+
+
+        -- Fzflua
+        hl(0, 'FzfLuaFzfMatch', { link = 'Number' })
     end
 
 
