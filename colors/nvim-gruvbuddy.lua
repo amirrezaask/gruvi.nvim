@@ -126,8 +126,8 @@ function theme.new_base16(name, colors)
         hl(0, "Type", { fg = base0A:to_hex() })
         hl(0, "Identifier", { fg = base08:to_hex() })
         hl(0, "Operator", { fg = base05:to_hex() })
-        hl(0, "PreProc", { fg = base0E:to_hex() }) -- e.g., #include
-        hl(0, "Special", { fg = base0C:to_hex() }) -- e.g., escape sequences
+        hl(0, "PreProc", { fg = base0E:to_hex() })
+        hl(0, "Special", { fg = base0C:to_hex() })
         hl(0, "SpecialComment", { fg = base04:to_hex(), italic = true })
         hl(0, "Todo", { fg = base0A:to_hex(), bg = base01:to_hex(), bold = true })
 
@@ -139,9 +139,9 @@ function theme.new_base16(name, colors)
         hl(0, "DiffDelete", { fg = base08:to_hex(), bg = base01:to_hex() })
         hl(0, "DiffText", { fg = base0D:to_hex(), bg = base01:to_hex() })
 
-
         -- Fzflua
         hl(0, 'FzfLuaFzfMatch', { link = 'Number' })
+        hl(0, 'FzfLuaFzfPrompt', { link = 'LineNr' })
     end
 
 
