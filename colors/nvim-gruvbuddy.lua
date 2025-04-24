@@ -1,4 +1,4 @@
-local base16 = require("grubuddy.base16")
+local base16 = require("gruvbuddy.base16")
 local RGB = base16.rgb
 
 local dark_base = "#282c34"
