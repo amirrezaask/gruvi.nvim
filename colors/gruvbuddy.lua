@@ -27,6 +27,17 @@ local colors = { -- Colors are insipired by @tjdevries ( https://github.com/tjde
 
 base16.theme.new("gruvbuddy", colors):apply()
 
+if vim.g.gruvbuddy_transparent then
+  vim.cmd [[
+    hi Normal guibg=none
+    hi NormalFloat guibg=none
+    hi NormalNC guibg=none
+    hi FloatBorder guibg=none
+    hi SignColumn guibg=none
+    hi LineNr guibg=none
+  ]]
+end
+
 -- Floating
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#000000" })
 
