@@ -1,7 +1,12 @@
 local base16 = require("gruvbuddy.base16")
 local RGB = base16.rgb
 
+local style = vim.g.gruvbuddy_style or "default"
 local dark_base = "#282c34"
+
+if style == "dark" then
+  dark_base = "#111416"
+end
 
 local colors = { -- Colors are insipired by @tjdevries ( https://github.com/tjdevries/colorbuddy.nvim )
   -- UI
@@ -50,5 +55,6 @@ vim.api.nvim_set_hl(0, "SnacksPickerListCursorLine", { link = "CursorLine" })
 vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = colors[9]:to_hex() })
 vim.api.nvim_set_hl(0, "SnacksPickerMatch", { link = "Number" })
 
+-- Telescope
 vim.api.nvim_set_hl(0, "TelescopeMatching", { link = "Number" })
 vim.api.nvim_set_hl(0, "TelescopeSelection", { link = "CursorLine" })
