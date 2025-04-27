@@ -107,7 +107,7 @@ function theme.new(name, colors)
     hl(0, "MatchParen", { fg = base0E:to_hex(), bold = true })
     hl(0, "Folded", { fg = base03:to_hex(), bg = base01:to_hex() })
     hl(0, "SignColumn", { bg = base00:to_hex() })
-    hl(0, "Comment", { fg = base03:to_hex(), italic = true })
+    hl(0, "Comment", { fg = base03:to_hex() })
     hl(0, "Keyword", { fg = base0E:to_hex() }) -- e.g., if, for
     hl(0, "Statement", { fg = base0E:to_hex() }) -- e.g., return, break
     hl(0, "Function", { fg = base0D:to_hex() })
@@ -121,7 +121,7 @@ function theme.new(name, colors)
     hl(0, "Operator", { fg = base05:to_hex() })
     hl(0, "PreProc", { fg = base0E:to_hex() })
     hl(0, "Special", { fg = base0C:to_hex() })
-    hl(0, "SpecialComment", { fg = base04:to_hex(), italic = true })
+    hl(0, "SpecialComment", { fg = base04:to_hex() })
     hl(0, "Todo", { fg = base0A:to_hex(), bg = base01:to_hex(), bold = true })
 
     hl(0, "Error", { fg = base08:darken(0.3):to_hex() })
