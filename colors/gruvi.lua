@@ -1,7 +1,7 @@
-local base16 = require("gruvbuddy.base16")
+local base16 = require("gruvi.base16")
 local RGB = base16.rgb
 
-local style = vim.g.gruvbuddy_style or "default"
+local style = vim.g.gruvi_style or "default"
 local dark_base = "#282c34"
 
 if style == "dark" then
@@ -30,7 +30,7 @@ local colors = { -- Colors are insipired by @tjdevries ( https://github.com/tjde
   RGB.from_hex("#E6B3B3"), -- base0F
 }
 
-base16.theme.new("gruvbuddy", colors):apply()
+base16.theme.new("gruvi", colors):apply()
 
 if vim.g.gruvbuddy_transparent then
   vim.cmd [[
@@ -43,15 +43,11 @@ if vim.g.gruvbuddy_transparent then
   ]]
 end
 
--- Floating
--- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#000000" })
-
 -- Fzflua
 vim.api.nvim_set_hl(0, "FzfLuaFzfMatch", { link = "Number" })
 vim.api.nvim_set_hl(0, "FzfLuaFzfPrompt", { link = "LineNr" })
 
 -- Snacks
--- vim.api.nvim_set_hl(0, "SnacksPickerListCursorLine", { link = "CursorLine" })
 vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = colors[6]:to_hex() })
 vim.api.nvim_set_hl(0, "SnacksPickerMatch", { link = "Number" })
 
