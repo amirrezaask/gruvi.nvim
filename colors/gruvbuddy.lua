@@ -58,3 +58,16 @@ vim.api.nvim_set_hl(0, "SnacksPickerMatch", { link = "Number" })
 -- Telescope
 vim.api.nvim_set_hl(0, "TelescopeMatching", { link = "Number" })
 vim.api.nvim_set_hl(0, "TelescopeSelection", { link = "CursorLine" })
+
+-- Statusline
+vim.cmd [[
+  hi default link StatusLineNormal    StatusLine
+  hi default link StatusLineInsert    StatusLine
+  hi default link StatusLineVisual    StatusLine
+  hi default link StatusLineCommand   StatusLine
+  hi default link StatusLineReplace   StatusLine
+  hi default link StatusLineSelect    StatusLine
+  hi default link StatusLineTerminal  StatusLine
+  hi default link StatusLineGitBranch StatusLine
+  hi default link StatusLineGitStatus StatusLine
+]]
