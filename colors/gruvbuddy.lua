@@ -51,8 +51,8 @@ vim.api.nvim_set_hl(0, "FzfLuaFzfMatch", { link = "Number" })
 vim.api.nvim_set_hl(0, "FzfLuaFzfPrompt", { link = "LineNr" })
 
 -- Snacks
-vim.api.nvim_set_hl(0, "SnacksPickerListCursorLine", { link = "CursorLine" })
-vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = colors[9]:to_hex() })
+-- vim.api.nvim_set_hl(0, "SnacksPickerListCursorLine", { link = "CursorLine" })
+vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = colors[6]:to_hex() })
 vim.api.nvim_set_hl(0, "SnacksPickerMatch", { link = "Number" })
 
 -- Telescope
